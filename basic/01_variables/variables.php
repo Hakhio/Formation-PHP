@@ -1,12 +1,20 @@
 <?php
 
 /*
-    Chapitre 01 - Variables
+    Chapitre 01 - Les variables
 */
 
 // → Variables
 // Emplacement en mémoire où on peut stocker une valeur
 // Préfixer le nom d'un $
+
+// Déclaration
+// Réservation d'un emplacement en mémoire
+
+$maVariable;
+
+// Affectation
+// Donner une valeur à une variable
 
 $a = 1;
 $b = "Hello";
@@ -17,13 +25,27 @@ $f = $a + $e;
 
 $A = 5; // variable différente de $a (sensible à la casse)
 
+
 // → Constantes
 // Emplacement en mémoire où on peut stocker une valeur 
 // <!> ne peut pas être réaffectée
 
-define('PI', 3.141592);
+define('PI', 3.141592); // <!> fonctionne uniquement en dehors de la définition d'une classe
 $e = PI * $a; // 3.141592 * 1
 // PI = 42; // Impossible de modifier une constante
+
+const MY_CONSTANTE = "Hello"; // <!> fonctionne dans et en dehors de la définition d'une classe
+
+// → Bonnes pratiques
+
+/*
+
+- Nom doit être cohérent (alphabet à éviter)
+- Accents et caractères spéciaux interdits => langage anglophone
+- lowerCamelCase pour les variables (UpperCamelCase pour les classes)
+- UPPERCASE pour les constantes (vues après)
+
+*/
 
 // → NULL
 // Absence de valeur (rien informatique)
@@ -55,7 +77,3 @@ $booleen2 = false;
 
 // Object
 // Vu plus tard
-
-
-
-?>

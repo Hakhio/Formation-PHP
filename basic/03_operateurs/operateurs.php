@@ -1,7 +1,7 @@
 <?php
 
 /*
-    Chapitre 02 - Les opérateurs
+    Chapitre 03 - Les opérateurs
 */
 
 // → Opérateurs arithmétiques
@@ -25,3 +25,57 @@ $res = 2 % 3; // 2
 echo "<p>2 % 3 = " . $res . "</p>";
 $res = 2 ** 3; // 8
 echo "<p>2 ** 3 = " . $res . "</p>";
+
+// → Opérateurs conditionnels
+// Basé sur une expression booléenne
+// 2 états possibles : true ou false
+
+//  > : Plus grand que
+//  < : Plus petit que
+// >= : Supérieur ou égale à
+// <= : Inférieur ou égale à
+// != : Différent de
+// == : Égale à
+
+$a = 2;
+$b = 3;
+
+$etat = $a > $b; // true
+echo "<p>$a > $b = " . $a > $b . "</p>";
+$etat = $a < $b; // false
+echo "<p>$a < $b = " . $a < $b . "</p>";
+$etat = $a >= $b; // true
+echo "<p>$a >= $b = " . $a >= $b . "</p>";
+$etat = $a <= $b; // false
+echo "<p>$a <= $b = " . $a <= $b . "</p>";
+$etat = $a != $b; // true
+echo "<p>$a != $b = " . $a != $b . "</p>";
+$etat = $a == $b; // false
+echo "<p><$a == $b = " . $a == $b . "/p>"; 
+
+// → Opérateurs logiques
+// Permet de combiner plusieurs conditions
+// Il existe 3 opérateurs logiques : ET, OU, NON
+
+// and ou &&
+// or ou ||
+// !
+
+// • &&
+
+echo "<p>true && true : " . true && true . "</p>"; // true
+echo "<p>false && true : " . false && true . "</p>"; // false
+echo "<p>true && false : " . true && false . "</p>"; // false
+echo "<p>false && false : " . false && false . "</p>"; // false
+
+// • ||
+
+echo "<p>true || true : " . true || true . "</p>"; // true
+echo "<p>false || true : " . false || true . "</p>"; // true
+echo "<p>true || false : " . true || false . "</p>"; // true
+echo "<p>false || false : " . false || false . "</p>"; // false
+
+// • !
+echo "<p>!true : " . !true . "</p>"; // false
+echo "<p>!false : " . !false . "</p>"; // true
+
